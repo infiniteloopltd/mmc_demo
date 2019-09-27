@@ -1,0 +1,6 @@
+c:\users\fiach reid\documents\visual studio 2013\Projects\MMC_Demo\MMC_Demo\bin\Debug\MMC_Demo.exe.config
+c:\users\fiach reid\documents\visual studio 2013\Projects\MMC_Demo\MMC_Demo\bin\Debug\MMC_Demo.exe
+c:\users\fiach reid\documents\visual studio 2013\Projects\MMC_Demo\MMC_Demo\bin\Debug\MMC_Demo.pdb
+c:\users\fiach reid\documents\visual studio 2013\Projects\MMC_Demo\MMC_Demo\obj\Debug\MMC_Demo.csprojResolveAssemblyReference.cache
+c:\users\fiach reid\documents\visual studio 2013\Projects\MMC_Demo\MMC_Demo\obj\Debug\MMC_Demo.exe
+c:\users\fiach reid\documents\visual studio 2013\Projects\MMC_Demo\MMC_Demo\obj\Debug\MMC_Demo.pdb
