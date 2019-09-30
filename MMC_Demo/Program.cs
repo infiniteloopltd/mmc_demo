@@ -15,6 +15,7 @@ namespace MMC_Demo
             if (args.Length < 3)
             {
                 Console.WriteLine("Please call as follows; MMC_Demo.exe <username> <registration> <state>");
+                return;
             }
 
             var username = args[0];
