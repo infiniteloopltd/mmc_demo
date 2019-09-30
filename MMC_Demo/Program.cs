@@ -1,9 +1,12 @@
 ﻿using System;
+using System.Threading;
 
 namespace MMC_Demo
 {
     class Program
     {
+        private static readonly AutoResetEvent AutoEvent = new AutoResetEvent(false);
+
         static void Main(string[] args)
         {
             Console.WriteLine("MMC Demo");
@@ -20,13 +23,13 @@ namespace MMC_Demo
 
             var api = new regcheck.CarReg();
 
-            var data = api.CheckUSA(reg, state, username);
-
-            Console.WriteLine(data.vehicleJson);
-
-
-
-
+            api.CheckUSAAsync(reg, state, username, AutoEvent);
+            api.CheckUSACompleted += (sender, eventArgs) =>
+            {
+                Console.WriteLine(eventArgs.Result.vehicleJson);
+                ((AutoResetEvent) eventArgs.UserState).Set();
+            };
+            AutoEvent.WaitOne();
         }
     }
 }
